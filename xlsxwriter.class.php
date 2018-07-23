@@ -308,7 +308,7 @@ class XLSXWriter
 		$max_cell = self::xlsCell($sheet->row_count - 1, count($sheet->columns) - 1);
 
 		if ($sheet->auto_filter) {
-			$sheet->file_writer->write(    '<autoFilter ref="A1:' . $max_cell . '"/>');			
+			$sheet->file_writer->write(    '<autoFilter ref="A8:' . $max_cell . '"/>');			
 		}
 
 		$sheet->file_writer->write(    '<printOptions headings="false" gridLines="false" gridLinesSet="true" horizontalCentered="false" verticalCentered="false"/>');
